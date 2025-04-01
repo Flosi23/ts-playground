@@ -1,0 +1,26 @@
+{
+	"include": ["**/*.ts"],
+	"compilerOptions": {
+		"module": "NodeNext",
+		"target": "ES2022",
+		"moduleResolution": "NodeNext",
+		"lib": ["ESNext"],
+		"noEmit": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"noUncheckedSideEffectImports": true,
+		"declaration": true,
+		"verbatimModuleSyntax": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"exactOptionalPropertyTypes": true,
+		"forceConsistentCasingInFileNames": true,
+		"stripInternal": true,
+		"allowImportingTsExtensions": true,
+		"rewriteRelativeImportExtensions": true
+		// disabling until compatible with tsgo
+		// "erasableSyntaxOnly": true
+		// "noErrorTruncation": true
+	},
+	"exclude": ["**/node_modules"]
+}

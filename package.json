@@ -1,0 +1,28 @@
+{
+	"name": "ts-playgroubnd",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"lint": "biome check --error-on-warnings .",
+		"lint:fix": "biome check --write .",
+		"lint:fix-unsafe": "biome check --write --unsafe .",
+		"fmt": "biome format --write",
+		"ci": "biome ci . && npm run typecheck",
+		"typecheck": "tsc --noEmit"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Flosi23/ts-playground.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Flosi23/ts-playground/issues"
+	},
+	"homepage": "https://github.com/Flosi23/ts-playground#readme",
+	"description": "",
+	"devDependencies": {
+		"@biomejs/biome": "2.0.0-beta.1",
+		"typescript": "^5.8.2"
+	}
+}
